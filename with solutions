@@ -1,0 +1,20 @@
+# Write a Python program to get the n (non-negative integer) copies of the first 2 characters of a given string.
+# Return the n copies of the whole string if the length is less than 2.
+
+# creating function for copying a string
+
+
+def copy_function():
+    my_string = input('Enter a string : ')
+    number = int(input('Enter a number : '))
+
+    copies_of_characters = my_string[:-5] * number
+    if len(copies_of_characters) < 2:
+        return my_string
+    else:
+        print('length of copies of first two characters are greater then 2')
+
+    print(copies_of_characters)
+
+
+copy_function()
